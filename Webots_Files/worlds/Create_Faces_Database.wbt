@@ -1,0 +1,414 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_01_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_02_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_03_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_04_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_05_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_06_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_07_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_08_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_09_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_10_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_11_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_12_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_13_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_14_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_15_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_16_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_17_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_18_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_19_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_20_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_21_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_22_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_23_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_24_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_25_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_26_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_27_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_28_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_29_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_30_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_31_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_32_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_33_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_34_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_35_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_36_standing.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.22821363505618622 -0.5879805263397726 -0.7760138126474593 5.3556212768128395
+  position -4.475286602621132 -4.271621462441294 4.76322148701829
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 7 7
+}
+DEF Wall Solid {
+  translation 1.5 0 1.5
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 5 0.1 4
+      }
+    }
+  ]
+}
+Robot {
+  translation -2 0 0
+  rotation 0.577349935856137 0.5773509358560258 -0.577349935856137 -2.094395307179586
+  children [
+    DEF Cameras Pose {
+      translation 0 -1.5 0
+      children [
+        DEF Center_Camera Pose {
+          children [
+            Camera {
+              translation 0 0 -0.14
+              rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+              name "camera_center"
+              width 1920
+              height 1280
+            }
+            Pose {
+              translation 0 0 -0.09
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.3 0.3 0.3
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry Cylinder {
+                    height 0.1
+                    radius 0.02
+                  }
+                }
+              ]
+            }
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.1 0.1 0.2
+              }
+            }
+          ]
+        }
+        DEF Up_Join Pose {
+          translation 0 -0.26 0
+          rotation 1 0 0 -1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.5
+                radius 0.02
+              }
+            }
+          ]
+        }
+        DEF Up_Camera Pose {
+          translation 0 -0.52 0
+          rotation 1 0 0 0.261799
+          children [
+            Camera {
+              translation 0 0 -0.14
+              rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+              name "camera_up"
+              width 1920
+              height 1280
+            }
+            Pose {
+              translation 0 0 -0.09
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.3 0.3 0.3
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry Cylinder {
+                    height 0.1
+                    radius 0.02
+                  }
+                }
+              ]
+            }
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.1 0.1 0.2
+              }
+            }
+          ]
+        }
+        DEF Down_Join Pose {
+          translation 0 0.26 0
+          rotation 1 0 0 -1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.5
+                radius 0.02
+              }
+            }
+          ]
+        }
+        DEF Down_Camera Pose {
+          translation 0 0.52 0
+          rotation 1 0 0 -0.261795307179586
+          children [
+            Camera {
+              translation 0 0 -0.14
+              rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+              name "camera_down"
+              width 1920
+              height 1280
+            }
+            Pose {
+              translation 0 0 -0.09
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.3 0.3 0.3
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry Cylinder {
+                    height 0.1
+                    radius 0.02
+                  }
+                }
+              ]
+            }
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.1 0.1 0.2
+              }
+            }
+          ]
+        }
+        DEF Left_Join Pose {
+          translation 0.26 0 0
+          rotation 0 1 0 -1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.5
+                radius 0.02
+              }
+            }
+          ]
+        }
+        DEF Left_Camera Pose {
+          translation 0.52 0 0
+          rotation 0 1 0 0.261799
+          children [
+            Camera {
+              translation 0 0 -0.14
+              rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+              name "camera_left"
+              width 1920
+              height 1280
+            }
+            Pose {
+              translation 0 0 -0.09
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.3 0.3 0.3
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry Cylinder {
+                    height 0.1
+                    radius 0.02
+                  }
+                }
+              ]
+            }
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.1 0.1 0.2
+              }
+            }
+          ]
+        }
+        DEF Right_Join Pose {
+          translation -0.26 0 0
+          rotation 0 1 0 -1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.5
+                radius 0.02
+              }
+            }
+          ]
+        }
+        DEF Right_Camera Pose {
+          translation -0.52 0 0
+          rotation 0 1 0 -0.261795307179586
+          children [
+            Camera {
+              translation 0 0 -0.14
+              rotation 0.5773499358549823 0.5773519358547601 -0.5773489358550934 2.0944
+              name "camera_right"
+              width 1920
+              height 1280
+            }
+            Pose {
+              translation 0 0 -0.09
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.3 0.3 0.3
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry Cylinder {
+                    height 0.1
+                    radius 0.02
+                  }
+                }
+              ]
+            }
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.1 0.1 0.2
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0 0.27
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.4 0.4 0.4
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.1 0.1 0.1
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 0 0.19
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.4 0.4 0.4
+                roughness 1
+                metalness 0
+              }
+              geometry Cylinder {
+                height 0.2
+                radius 0.03
+              }
+            }
+          ]
+        }
+      ]
+    }
+    DEF Base Pose {
+      translation 0 -1.55 0
+      children [
+        Group {
+          children [
+            Pose {
+              translation 0 0.59 0.27
+              rotation 1 0 0 -1.5707953071795862
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.4 0.4 0.4
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry Cylinder {
+                    height 1.9
+                    radius 0.05
+                  }
+                }
+              ]
+            }
+            Pose {
+              translation 0 1.45 0.27
+              rotation 1 0 0 1.5708
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.4 0.4 0.4
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry Cone {
+                    bottomRadius 0.27
+                    height 0.2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  controller "controller_collect_faces_for_database"
+  supervisor TRUE
+}

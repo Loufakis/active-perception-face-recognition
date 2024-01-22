@@ -1,0 +1,43 @@
+{
+    # Dataset 
+    label_type                         : null,             # placeholder for: [hard, soft]
+    labeling_method                    : derivative_slope,   # ['derivative_slope', 'integral_ratio', 'symmetric_sampling', 'estimation_correction']
+    dataset_name                       : null,             # placeholder for dataset name
+    training_samples                   : null,             # placeholder for total number of training examples
+    validation_samples                 : null,             # placeholder for total number of validation examples
+    device                             : null,             # placeholder for the device to be used
+    use_depth_head                     : True,             # [True, False]
+    backbone_name                      : efficientnet-b0,
+    run_name                           : null,             # placeholder for the run name
+    model_parameters                   : null,             # placeholder for the total numbers the model contains
+    pretrained_weights                 : True,             # [True, False]
+    depth_head_loss_function_name      : MSELoss,            
+    vertical_head_loss_function_name   : CrossEntropyLoss,
+    horizontal_head_loss_function_name : CrossEntropyLoss,
+    optimizer_name                     : Adam,             # [Adam, SGD, RMSprop, Adagrad]
+    sceduler_name                      : ReduceOnPlateau,  # [null, CosineAnnealing, CosineAnnealingWarmRestarts, ReduceOnPlateau]
+    learning_rate                      : 0.00005,
+    batch_size                         : 32,
+    epochs                             : 100,
+    input_image_height                 : 160,
+    input_image_width                  : 128, 
+    use_early_stop                     : True,             # [True, False]
+    early_stop_patience                : 5,
+
+    # Augmentations
+    use_jitter_brightness              : True,             # [True, False]
+    use_color_jitter                   : True,             # [True, False]
+    use_jitter_contrast                : True,             # [True, False]
+    use_jitter_saturation              : True,             # [True, False]
+    use_jitter_hue                     : True,             # [True, False]
+    use_gaussian_blur                  : True,             # [True, False]
+    use_random_perspective             : True,             # [True, False]
+
+    # Specialized dataset parameters
+    accepted_verification_scores       : [0.00, 0.85],
+    averaging_window                   : 3,
+    border_width                       : 3,
+    derivative_threshold               : 0.02,
+    integral_ratio_threshold           : 0.15,
+    gaussian_decay_window              : 5,
+    }

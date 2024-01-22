@@ -1,0 +1,532 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_01_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_02_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_03_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_04_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_05_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_06_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_07_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_08_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_09_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_10_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_11_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_12_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_13_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_14_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_15_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_16_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_17_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_18_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_19_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_20_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_21_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_22_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_23_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_24_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_25_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_26_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_27_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_28_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_29_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_30_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_31_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_32_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_33_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_34_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_35_standing.proto"
+IMPORTABLE EXTERNPROTO "../protos/human_36_standing.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/balls/protos/Ball.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/balls/protos/PingPongBall.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/computers/protos/Monitor.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/balls/protos/RobocupSoccerBall.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/balls/protos/SoccerBall.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/computers/protos/Laptop.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/drinks/protos/BeerBottle.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/drinks/protos/Can.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/drinks/protos/WaterBottle.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/fire_extinguisher/protos/FireExtinguisher.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/tools/protos/Hammer.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/tools/protos/PaintBucket.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/tools/protos/Screwdriver.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/tools/protos/Wrench.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/fruits/protos/Apple.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/fruits/protos/Orange.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/hospital/protos/HandSanitizer.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/breakfast/protos/BiscuitBox.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/breakfast/protos/CerealBox.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/breakfast/protos/HoneyJar.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/breakfast/protos/JamJar.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/utensils/protos/Carafe.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/utensils/protos/Cookware.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/utensils/protos/Fork.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/utensils/protos/Glass.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/utensils/protos/Knife.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/utensils/protos/Lid.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/utensils/protos/Plate.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/utensils/protos/Spoon.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/utensils/protos/Wineglass.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/kitchen/utensils/protos/WoodenSpoon.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/lights/protos/FloorLight.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/mirror/protos/Mirror.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/paintings/protos/LandscapePainting.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/paintings/protos/PortraitPainting.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/plants/protos/BunchOfSunFlowers.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/plants/protos/FlowerPot.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/plants/protos/PottedTree.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/rocks/protos/Rock10cm.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/rocks/protos/Rock17cm.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/school_furniture/protos/Book.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/street_furniture/protos/FireHydrant.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/street_furniture/protos/Mailbox.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/street_furniture/protos/MetallicTrash.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/telephone/protos/OfficeTelephone.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/telephone/protos/Telephone.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/television/protos/Television.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/toys/protos/PaperBoat.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/toys/protos/RubberDuck.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/StreetLight.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/GenericTrafficLight.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/OrderSign.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/CautionSign.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/SpeedLimitSign.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/StopSign.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/ParkingMeter.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/TrafficCone.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/traffic/protos/YieldSign.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/trees/protos/Cypress.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/trees/protos/Oak.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/trees/protos/PalmTree.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/trees/protos/BigSassafras.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.15679793158264255 -0.7931555105743534 -0.5884885255439917 5.635002492656251
+  position -28.193109247937134 -14.79395803577167 17.564415143609608
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 50 50
+}
+DEF Train_Humans Pose {
+  translation -4.3 -3.08 0
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Group {
+      children [
+        human_01_standing {
+          translation -7 0 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_02_standing {
+          translation -6 0 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_03_standing {
+          translation -5 0 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_05_standing {
+          translation -4 0 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_06_standing {
+          translation -3 0 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_07_standing {
+          translation -2 0 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_09_standing {
+          translation -7 -1 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_09_standing {
+          translation -3.01 -4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_10_standing {
+          translation -6 -1 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_10_standing {
+          translation -1.99 -4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_11_standing {
+          translation -5 -1 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_13_standing {
+          translation -4 -1 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_14_standing {
+          translation -3 -1 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_15_standing {
+          translation -2 -1 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_16_standing {
+          translation -7 -2 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_17_standing {
+          translation -6 -2 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_18_standing {
+          translation -5 -2 0
+          rotation 0 0 -1 1.309
+        }
+        human_20_standing {
+          translation -4 -2 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_21_standing {
+          translation -3 -2 0
+          rotation 0 0 -1 1.309
+        }
+        human_22_standing {
+          translation -2 -2 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_23_standing {
+          translation -7 -3 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_24_standing {
+          translation -6 -3 0
+          rotation 0 0 -1 1.309
+        }
+        human_26_standing {
+          translation -5 -3 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_27_standing {
+          translation -4 -3 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_28_standing {
+          translation -3 -3 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_30_standing {
+          translation -2 -3 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_31_standing {
+          translation -7 -4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_32_standing {
+          translation -6 -4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_33_standing {
+          translation -5 -4 0
+          rotation 0 0 1 -2.3561953071795863
+        }
+        human_35_standing {
+          translation -4 -4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+      ]
+    }
+  ]
+}
+DEF Test_Humans Pose {
+  translation -5.22 -8.42 0
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Group {
+      children [
+        human_04_standing {
+          translation -1 1 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_08_standing {
+          translation 0 1 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_12_standing {
+          translation 1 1 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_19_standing {
+          translation -1 0 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_25_standing {
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_29_standing {
+          translation 1 0 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        human_34_standing {
+          translation -1 -1 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+      ]
+    }
+  ]
+}
+DEF Test_Objects Pose {
+  translation 1.96 -2.03 0
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Group {
+      children [
+        Oak {
+          translation 5.5 4.01 0
+        }
+        YieldSign {
+          translation 6.49 4.01 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        GenericTrafficLight {
+          translation 7.5 4.03 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        MetallicTrash {
+          translation 5.49 3 0
+        }
+        FireHydrant {
+          translation 7.6 2.21 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        Rock17cm {
+          translation 6.6 2.25 0.01
+        }
+        PottedTree {
+          translation 6.49 2.99 0
+        }
+        PortraitPainting {
+          translation 7.49 3.01 0.505
+          rotation 0 0 1 -1.5707953071795862
+        }
+        Glass {
+          translation 6.04 1.93 0.01
+          rotation 0 1 0 0
+        }
+        Fork {
+          translation 5.77 1.93 0.02
+          rotation 0 0 1 1.5708
+        }
+        BiscuitBox {
+          translation 6.1 2.24 0.0600012
+          rotation -0.5773489358550934 -0.5773499358549823 0.5773519358547601 -2.094395307179586
+        }
+        Laptop {
+          translation 7.12 2.26 -0.01
+          rotation 0 0 1 -1.5707953071795862
+        }
+        RobocupSoccerBall {
+          translation 5.78 2.25 0.06
+          rotation 0 0 1 3.14159
+        }
+      ]
+    }
+  ]
+}
+DEF Train_Objects Pose {
+  translation -1.05018e-06 1.03 0
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Group {
+      children [
+        Cookware {
+          translation -1.10196e-07 1.75 0.01
+          rotation 0 0 1 1.5708
+        }
+        Knife {
+          translation 1.5 1.74 0.02
+          rotation 0 0 1 1.5708
+        }
+        Carafe {
+          translation -0.5 2.25 0
+        }
+        JamJar {
+          translation 0.5 2.25 0.01
+          rotation 0 0 1 -1.5707953071795862
+        }
+        HoneyJar {
+          translation 0.74 2.25 -0.01
+          rotation 0 0 1 -1.5707953071795862
+        }
+        CerealBox {
+          translation -1.37 2.25 0.01
+          rotation 2.3464099999870814e-06 -2.3464099999870814e-06 0.9999999999944944 -1.5707953071795862
+        }
+        HandSanitizer {
+          translation -0.75 2.24 0.09
+        }
+        Orange {
+          translation 1 2.23 0.04
+          rotation 0 1 0 0
+        }
+        Apple {
+          translation 1.25 2.23 0.06
+        }
+        Wrench {
+          translation 1.25 1.75 0
+          rotation 0 0 1 1.5708
+        }
+        Screwdriver {
+          translation 1 1.74 0.012
+          rotation 0 0 1 1.5708
+        }
+        PaintBucket {
+          translation -1 2.25 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        Hammer {
+          translation 0.75 1.75 0.024
+          rotation 0 0 1 1.5708
+        }
+        FireExtinguisher {
+          translation -2.25 2.25 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        WaterBottle {
+          translation -0.25 2.25 0
+        }
+        Can {
+          translation -0.27 1.71 0.08
+        }
+        BeerBottle {
+          translation 0.25 2.24 0.01
+          rotation 0 0 1 -1.5707953071795862
+        }
+        SoccerBall {
+          translation 2 2.23 0.11
+          rotation 0 1 0 0
+        }
+        Monitor {
+          translation 0.99 3 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        PingPongBall {
+          translation 1.49 2.24 0.03
+        }
+        Ball {
+          translation 1.75 2.25 0.05
+        }
+        Lid {
+          translation 0.25 1.748 0
+        }
+        Plate {
+          translation 0.5 1.75 0.01
+        }
+        Spoon {
+          translation 1.76 1.75 0.01
+          rotation 0 0 1 1.5708
+        }
+        Wineglass {
+          translation 0 2.25 0
+        }
+        WoodenSpoon {
+          translation 2 1.75 0
+          rotation 0 0 1 1.5708
+        }
+        FloorLight {
+          translation -3 4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        Mirror {
+          translation -3 3 7.93399e-06
+          rotation 1 0 0 1.5708
+        }
+        LandscapePainting {
+          translation -1.68 3 0.5
+          rotation 0 0 1 -1.5707953071795862
+        }
+        BunchOfSunFlowers {
+          translation -3 2.25 0
+          rotation 0 0 1 3.14159
+        }
+        FlowerPot {
+          translation -0.5 1.75 0.01
+        }
+        Rock10cm {
+          translation -0.76 1.72 0.07
+        }
+        Book {
+          translation -1.71 2.26 0.11
+          rotation 0 0 1 -1.5707953071795862
+        }
+        Mailbox {
+          translation 2 3.01 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        OfficeTelephone {
+          translation -1.84 1.74 0.01
+          rotation 0 0 1 -1.5707953071795862
+        }
+        Telephone {
+          translation -2.25 1.76 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        Television {
+          translation -0.08 3 0.3
+          rotation 0 0 1 -1.5707953071795862
+        }
+        PaperBoat {
+          translation -1.39 1.74 0.01
+          rotation 0 1 0 0
+        }
+        RubberDuck {
+          translation -1 1.75 0.03
+        }
+        StreetLight {
+          translation -3 6 -8.3532e-06
+          rotation 2.3464099999870814e-06 -2.3464099999870814e-06 0.9999999999944944 -1.5707953071795862
+          on FALSE
+        }
+        OrderSign {
+          translation 2 4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        CautionSign {
+          translation -1 4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        SpeedLimitSign {
+          translation 0 4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        StopSign {
+          translation 1 4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        ParkingMeter {
+          translation -2.29 4 0
+          rotation 0 0 1 -1.5707953071795862
+        }
+        TrafficCone {
+          translation -2.99 1.76 0
+        }
+        Cypress {
+          translation -1.5 6 0
+        }
+        PalmTree {
+          translation 0 6 0
+        }
+        BigSassafras {
+          translation 2 6 0
+        }
+      ]
+    }
+  ]
+}
