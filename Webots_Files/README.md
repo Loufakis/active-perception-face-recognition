@@ -18,7 +18,7 @@ These files are crafted to perform three primary tasks supporting the active per
    - Purpose: The purpose of this controller is to gather a dataset specifically tailored for active perception research. The process involves piloting a Mavic 2 Pro drone through a pre-defined grid in front of human subjects whose faces are partially occluded. Each iteration of this process spawns a new human-object pair, guiding the drone across a 20x20 grid to collect up to 400 unique samples. At each point in the grid, the script captures an image and evaluates face recognition accuracy, focusing particularly on how occlusion impacts recognition. This dataset is invaluable in researching and developing algorithms capable of dealing with occlusions in face recognition, thus enhancing the robustness of these systems in real-world scenarios.
 
     <div style="text-align: center;">
-        <img src="../figures/train_samples_collection.gif" alt="Data Collection GIF" style="width: 50%; height: auto;">
+        <img src="../figures/Collecting_samples.gif" alt="Data Collection GIF" style="width: 50%; height: auto;">
         <figcaption>Video from the Webots simulation environment showing the data collection process</figcaption>
     </div>
     <br/>
@@ -31,11 +31,11 @@ These files are crafted to perform three primary tasks supporting the active per
 
         <div style="display: flex; text-align: center;">
             <div style="flex: 1; padding: 5px;">
-                <img src="../figures/simulation_eval_over_the_shoulder.gif" alt="First GIF Description" style="width:100%">
+                <img src="../figures/Over_the_shoulder_evaluation.gif" alt="First GIF Description" style="width:100%">
                 <figcaption>Video showing the evaluation of a trained network on an Over-the-Shoulder scenario</figcaption>
             </div>
             <div style="flex: 1; padding: 5px;">
-                <img src="../figures/simulation_eval_urban.gif" alt="Second GIF Description" style="width:100%">
+                <img src="../figures/Urban_evaluation.gif" alt="Second GIF Description" style="width:100%">
                 <figcaption>Video showing the evaluation of a trained network on an Urban scenario</figcaption>
             </div>    
         </div>
