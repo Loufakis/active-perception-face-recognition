@@ -31,7 +31,7 @@ This project explores how robotic agents can improve face recognition performanc
 - **Active Perception:** Trained Multi-Taks Learning (MTL) Network to reposition the robot based on current camera view quality to improve recognition outcomes.
 - **Evaluation:** Results show improved recognition performance when the robot actively navigates by the instructions of the MTL model vs. remaining static.
 <p align="center">
-    <img src="../figures/active_perception.png" width="100%" />
+    <img src="figures/active_perception.png" width="100%" />
     <em>Example of how the drone's view is enhanced when navigating around an occluded face, following the directions of the trained MTL Network (Hydranet).</em> 
 </p>
 
