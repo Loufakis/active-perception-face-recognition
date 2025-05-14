@@ -10,8 +10,14 @@ This repository contains all the code and resources used for my Master's thesis 
 - **Institution:** Aristotle University of Thessaloniki
 - **Year:** 2023
 
-## Contents
+## Abstract
+This project investigates the integration of active perception strategies in robotic systems to improve face recognition capabilities. By enabling a robot to navigate and adjust its viewpoint actively, the system aims to capture more informative visual data, leading to enhanced recognition performance. The approach combines multi-task learning techniques within a simulated environment to validate the effectiveness of active perception in face recognition tasks.
 
+## Repository Structure
+- `Code/`:
+- `Webots_Files/`: Contains the Webots simulation world and robot controller scripts.
+- `figures/`: Includes visualizations and diagrams used in the thesis.
+- `Thesis.pdf`: The complete Master's thesis document detailing the research, methodology, experiments, and conclusions.
 
 
 ## Research Summary
