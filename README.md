@@ -14,7 +14,7 @@ This repository contains all the code and resources used for my Master's thesis 
 This project explores how robotic agents can improve face recognition performance through active perception—by intelligently navigating to acquire more informative viewpoints. A Webots-based simulation is developed, where a robot learns to move within an environment to optimize face recognition. The system combines navigation and perception using multi-task learning, demonstrating that task-aware movement leads to higher recognition accuracy compared to static observation.
 
 <div style="flex: 1; padding: 5px;">
-    <img src="../figures/Urban_evaluation.gif" alt="Second GIF Description" style="width:50%">
+    <img src="figures/Urban_evaluation.gif" alt="Second GIF Description" style="width:50%">
     <figcaption>Video showing the performance of a trained network on an Urban scenario</figcaption>
 </div>
 
