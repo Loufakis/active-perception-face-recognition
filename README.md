@@ -27,7 +27,6 @@ This project explores how robotic agents can improve face recognition performanc
 - **Evaluation:** Results show improved recognition performance when the robot actively navigates by the instructions of the MTL model vs. remaining static.
 
 
-
 ## Usage
 ### Requirements
 
@@ -39,7 +38,7 @@ This project explores how robotic agents can improve face recognition performanc
   ```
 
 ###  Running the Simulation
-1. Open Webots and load the .wbt world file from Webots_Files/.
+1. Open Webots and load the .wbt world file from `Webots_Files/`.
 2. Start the simulation.
 3. The robot will explore the environment, attempting to optimize its position for facial recognition.
 
@@ -47,8 +46,7 @@ This project explores how robotic agents can improve face recognition performanc
 If using Code/ for training:
 ```bash
 cd Code
-python train_face_recognition.py
-python train_navigation_agent.py
+python train.py
 ```
 
 ## Citation
