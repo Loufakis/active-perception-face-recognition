@@ -23,9 +23,8 @@ This project explores how robotic agents can improve face recognition performanc
 ## Research Summary
 - **Simulation:** Conducted in Webots, simulating a mobile robot navigating a 3D environment with face targets placed at various locations.
 - **Recognition Model:** Uses CNN-based architecture to classify identities from RGB input frames.
-- **Active Perception:** Trained reinforcement learning agent learns to reposition the robot based on current camera view quality to improve recognition outcomes.
-- **Multi-task Learning:** Joint training of navigation and face recognition promotes efficient learning and cross-task benefit.
-- **Evaluation:** Results show improved recognition performance when the robot actively navigates vs. remaining static.
+- **Active Perception:** Trained Multi-Taks Learning (MTL) Network to reposition the robot based on current camera view quality to improve recognition outcomes.
+- **Evaluation:** Results show improved recognition performance when the robot actively navigates by the instructions of the MTL model vs. remaining static.
 
 
 
@@ -36,7 +35,7 @@ This project explores how robotic agents can improve face recognition performanc
 - Webots (tested with R2022b)
 - Dependencies:
   ```bash
-  pip install numpy opencv-python matplotlib tensorflow scikit-lear
+  pip install -r requirements.txt
   ```
 
 ###  Running the Simulation
